@@ -1,0 +1,20 @@
+ 
+post_install() {
+	#replacing config files
+    \cp -r /etc/namib-kde-settings/. /
+
+	\cp -r /etc/skel_kde/. /etc/skel_new/
+	
+    \rm -rf /usr/share/backgrounds/xfce
+
+    \ln -s /usr/share/backgrounds/namib /usr/share/backgrounds/xfce
+}
+
+post_upgrade() {
+    post_install $1
+}
+
+post_remove() {
+    \rm -rf /usr/share/backgrounds/xfce
+}
+

@@ -1,0 +1,23 @@
+pkgname=namib-kde-settings
+pkgdesc='Settings file for Namib Kde'
+pkgver=18.02
+pkgrel=1
+arch=('any')
+url="https://github.com/MeerkatBrowser/namib-kde-settings"
+license=('GPL')
+makedepends=('git')
+replace=('plasma-workspace-wallpapers')
+source=("git+$url.git")
+sha256sums=('SKIP')
+install=$pkgname.install
+
+package() {
+    package_path="/etc/$pkgname"
+    cd "${srcdir}/${pkgname}"
+
+	install -d ${pkgdir}$package_path/etc/lightdm/
+    install -m644 etc/lightdm/* "${pkgdir}$package_path/etc/lightdm/"
+
+	install -d ${pkgdir}$package_path/etc/skel_kde
+    cp -r ${srcdir}/namib-kde-settings/etc/skel_kde/ "${pkgdir}$package_path/etc/"
+}
