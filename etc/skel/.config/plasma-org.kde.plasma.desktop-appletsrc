@@ -27,6 +27,7 @@ DialogWidth=720
 customButtonImage=view-grid-symbolic
 favoritesPortedToKAstats=true
 useCustomButtonImage=true
+favorites=firefox.desktop,org.kde.dolphin.desktop,pamac-manager.desktop,systemsettings.desktop
 
 [Containments][2][Applets][19][Shortcuts]
 global=Alt+F1

@@ -106,19 +106,9 @@ ForegroundVisited=0,188,212
 ColorScheme=Adapta Nokto
 Name=Materia Namib Dark
 shadeSortColumn=true
-widgetStyle=gtk2
-
-[Icons]
-Theme=Papirus
 
 [KDE]
-ShowIconsInMenuItems=true
-ShowIconsOnPushButtons=true
 contrast=4
-
-[Toolbar style]
-ToolButtonStyle=TextBesideIcon
-ToolButtonStyleOtherToolbars=TextBesideIcon
 
 [WM]
 activeBackground=33,33,33
