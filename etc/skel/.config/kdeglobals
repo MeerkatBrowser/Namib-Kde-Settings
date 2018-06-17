@@ -109,7 +109,7 @@ ForegroundVisited=127,140,141
 
 [General]
 ColorScheme=Materia Namib Light
-Name=Materia Namib Dark
+Name=Materia Namib Light
 XftAntialias=true
 XftHintStyle=
 XftSubPixel=none
