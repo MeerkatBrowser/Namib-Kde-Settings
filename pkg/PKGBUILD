@@ -6,18 +6,24 @@ arch=('any')
 url="https://github.com/MeerkatBrowser/namib-kde-settings"
 license=('GPL')
 makedepends=('git')
-replace=('plasma-workspace-wallpapers')
+optdepends=('lightdm' 'lightdm-gtk-greeter' 'plasma-desktop' 'namib-wallpapers' 'papirus-icon-theme' 'materia-namib-gtk-theme' 'materia-namib-kde')
 source=("git+$url.git")
 sha256sums=('SKIP')
 install=$pkgname.install
 
 package() {
-    package_path="/etc/$pkgname"
-    cd "${srcdir}/${pkgname}"
+    install -d ${pkgdir}/etc/skel
+	install -d ${pkgdir}/etc/lightdm_kde
 
-	install -d ${pkgdir}$package_path/etc/lightdm/
-    install -m644 etc/lightdm/* "${pkgdir}$package_path/etc/lightdm/"
+    cp -r ${srcdir}/namib-kde-settings/etc/skel/. "${pkgdir}/etc/skel/"
+	cp -r ${srcdir}/namib-kde-settings/etc/lightdm/. "${pkgdir}/etc/lightdm_kde/"
 
-	install -d ${pkgdir}$package_path/etc/skel_kde
-    cp -r ${srcdir}/namib-kde-settings/etc/skel_kde/ "${pkgdir}$package_path/etc/"
+    #package_path="/etc/$pkgname"
+    #cd "${srcdir}/${pkgname}"
+
+	#install -d ${pkgdir}$package_path/etc/lightdm/
+    #install -m644 etc/lightdm/* "${pkgdir}$package_path/etc/lightdm/"
+
+	#install -d ${pkgdir}$package_path/etc/skel_kde
+    #cp -r ${srcdir}/namib-kde-settings/etc/skel_kde/ "${pkgdir}$package_path/etc/"
 }

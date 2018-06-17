@@ -1,9 +1,10 @@
  
 post_install() {
 	#replacing config files
-    \cp -r /etc/namib-kde-settings/. /
+    #\cp -r /etc/namib-kde-settings/. /
+    \cp -r /etc/lightdm_xfce/lightdm.conf /etc/lightdm/lightdm.conf
 
-	\cp -r /etc/skel_kde/. /etc/skel_new/
+	#\cp -r /etc/skel_kde/. /etc/skel_new/
 }
 
 post_upgrade() {

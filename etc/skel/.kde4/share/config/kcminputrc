@@ -5,5 +5,5 @@ MouseButtonMapping=RightHanded
 ReverseScrollPolarity=false
 Threshold=4
 cursorSize=0
-cursorTheme=Adwaita
+cursorTheme=Breeze
 
