@@ -58,7 +58,7 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][20][Wallpaper][org.kde.image][General]
+[Containments][23][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/backgrounds/namib/1802.jpg
 
 [Containments][7]
