@@ -19,11 +19,6 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.kicker
 
-
-[Containments][2][Applets][19][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][2][Applets][19][Configuration][General]
 customButtonImage=view-grid-symbolic
 favorites=firefox.desktop,org.kde.dolphin.desktop,pamac-manager.desktop,systemsettings.desktop
@@ -62,10 +57,6 @@ lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
-
-[Containments][20][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
 
 [Containments][20][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/backgrounds/namib/1802.jpg
