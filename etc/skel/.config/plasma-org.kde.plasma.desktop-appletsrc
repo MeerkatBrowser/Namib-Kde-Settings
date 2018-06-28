@@ -59,7 +59,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][23][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/backgrounds/namib/1802.jpg
+Image=file:///usr/share/backgrounds/namib/1806.jpg
 
 [Containments][7]
 activityId=
