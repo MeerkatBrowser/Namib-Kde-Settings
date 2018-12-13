@@ -1,7 +1,7 @@
 pkgname=namib-kde-settings
 pkgdesc='Settings file for Namib Kde'
 pkgver=18.08
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://github.com/MeerkatBrowser/namib-kde-settings"
 license=('GPL')
